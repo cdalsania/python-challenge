@@ -10,9 +10,17 @@ total_months = 0
 total_profit_or_loss = 0
 month_change_profit_or_loss = 0
 prior_month_change_profit_or_loss = 0
-total_month_change = 0
+first_month_profit_or_loss = 0
+last_month_profit_or_loss = 0
 average_change = 0
 greatest_increase = 0
 greatest_decrease = 0
 greatest_increase_month = ''
 greatest_decrease_month = ''
+
+#Opening and reading the CSV file
+with open(csvpath) as csvfile:
+    csvreader = csv.reader(csvfile, delimiter = ',')
+
+    #Reading the header row
+    csv_header = next(csvreader)
