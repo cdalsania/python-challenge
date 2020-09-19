@@ -48,3 +48,14 @@ with open(election_data, newline = '') as csvfile:
         winner = max(num_votes)
         index = num_votes.index(winner)
         winning_candidate = candidates[index]
+
+# Printing Results
+print("Election Results")
+print("--------------------------")
+print(f"Total Votes: {str(total_votes)}")
+print("--------------------------")
+for i in range(len(candidates)):
+    print(f"{candidates[i]}: {str(percent_votes[i])} ({str(num_votes[i])})")
+print("--------------------------")
+print(f"Winner: {winning_candidate}")
+print("--------------------------")
