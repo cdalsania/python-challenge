@@ -25,7 +25,7 @@ with open(csvpath) as csvfile:
     #Reading the header row
     csv_header = next(csvreader)
 
-     #Reading the first row (that we tract the changes properly)
+    #Reading the first row (that we tract the changes properly)
     #Variable to hold first_months_Profit_or_loss
     first_months_profit_or_loss = 0
     last_months_profit_or_loss = 0
@@ -40,3 +40,18 @@ with open(csvpath) as csvfile:
         
         if total_months > 1:
             month_change_profit_or_loss = int(row[1]) - prior_month_change_profit_or_loss
+
+        prior_month_change_profit_or_loss = int(row[1])
+
+        #Total_months to be one less : 86 - 1 = 85
+        
+
+        if month_change_profit_or_loss > greatest_increase:
+            greatest_increase = month_change_profit_or_loss
+            greatest_increase_month = row[0]
+
+        if month_change_profit_or_loss < greatest_decrease:
+            greatest_decrease = month_change_profit_or_loss
+            greatest_decrease_month = row[0]
+
+    average_change = (last_months_profit_or_loss - first_months_profit_or_loss) /(total_months - 1)
