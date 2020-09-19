@@ -25,3 +25,14 @@ with open(election_data, newline = '') as csvfile:
     for row in csvreader:
         #vote-counter 
         total_votes += 1 
+
+#if candidate is not on list, add the name to the list, along with the vote name
+#if candidate is already on the list, just add the vote to that name
+
+    if row[2] not in candidates:
+        candidates.append(row[2])
+        index = candidates.index(row[2])
+        num_votes.append(1)
+    else:
+        index = candidates.index(row[2])
+        num_votes[index] += 1
