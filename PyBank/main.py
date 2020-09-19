@@ -24,3 +24,19 @@ with open(csvpath) as csvfile:
 
     #Reading the header row
     csv_header = next(csvreader)
+
+     #Reading the first row (that we tract the changes properly)
+    #Variable to hold first_months_Profit_or_loss
+    first_months_profit_or_loss = 0
+    last_months_profit_or_loss = 0
+
+    for row in csvreader:
+        total_months += 1
+        total_profit_or_loss +=int(row[1])
+        if total_months == 1:
+            first_months_profit_or_loss = int(row[1])
+        else:
+            last_months_profit_or_loss = int(row[1])
+        
+        if total_months > 1:
+            month_change_profit_or_loss = int(row[1]) - prior_month_change_profit_or_loss
