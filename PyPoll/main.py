@@ -36,3 +36,10 @@ with open(election_data, newline = '') as csvfile:
     else:
         index = candidates.index(row[2])
         num_votes[index] += 1
+
+        #percent_votes list 
+    for votes in num_votes:
+        percentage = (votes/total_votes) * 100
+        percentage = round(percentage)
+        percentage = "%.3f%%" % percentage
+        percent_votes.append(percentage)
