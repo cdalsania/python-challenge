@@ -65,3 +65,6 @@ print('Average Change: $' + str(round(average_change,2)))
 print('Greatest Increase in Profits: ' + greatest_increase_month + ' ($' + str(greatest_increase) +')')
 print('Greatest Decrease in Profits: ' + (greatest_decrease_month) + ' ($' + str(greatest_decrease) + ')')
 
+f = open('analysis.txt', 'w')
+
+
