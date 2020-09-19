@@ -66,5 +66,13 @@ print('Greatest Increase in Profits: ' + greatest_increase_month + ' ($' + str(g
 print('Greatest Decrease in Profits: ' + (greatest_decrease_month) + ' ($' + str(greatest_decrease) + ')')
 
 f = open('analysis.txt', 'w')
+f.write('Financial Analysis\n')
+f.write('--------------------------\n')
+f.write('Total Months: ' +str(total_months) + '\n')
+f.write('Total: $' + str(total_profit_or_loss ) + '\n')
+f.write('Average Change: $' + str(format(average_change, '.2f')) + '\n')
+f.write('Greatest Increase in Profits: ' + greatest_increase_month + '($' + str(greatest_increase) +') \n')
+f.write('Greatest Decrease in Profits: ' + (greatest_decrease_month) + ' ($' + str(greatest_decrease) + ') \n')
+f.close(.)
 
 
