@@ -55,3 +55,9 @@ with open(csvpath) as csvfile:
             greatest_decrease_month = row[0]
 
     average_change = (last_months_profit_or_loss - first_months_profit_or_loss) /(total_months - 1)
+
+#Displaying information
+print('Financial Analysis')
+print('---------------------------')
+print('Total Months: ' +str(total_months))
+
