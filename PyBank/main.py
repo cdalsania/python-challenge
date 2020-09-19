@@ -60,4 +60,8 @@ with open(csvpath) as csvfile:
 print('Financial Analysis')
 print('---------------------------')
 print('Total Months: ' +str(total_months))
+print('Total: $' + str(total_profit_or_loss))
+print('Average Change: $' + str(round(average_change,2)))
+print('Greatest Increase in Profits: ' + greatest_increase_month + ' ($' + str(greatest_increase) +')')
+print('Greatest Decrease in Profits: ' + (greatest_decrease_month) + ' ($' + str(greatest_decrease) + ')')
 
