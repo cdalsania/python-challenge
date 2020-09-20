@@ -2,7 +2,7 @@
 
 ## PyBank
 
-* In this challenge, creating a Python script for analyzing the financial records of a company. You will give a set of financial data called [budget_data.csv](PyBank/Resources/budget_data.csv). The dataset is composed of two columns: `Date` and `Profit/Losses`. (Thankfully, your company has rather lax standards for accounting so the records are simple.)
+* In this challenge, creating a Python script for analyzing the financial records of a company. There will be a set of financial data called [budget_data.csv](PyBank/Resources/budget_data.csv). The dataset is composed of two columns: `Date` and `Profit/Losses`. 
 
 * Task is to create a Python script that analyzes the records to calculate each of the following:
 
@@ -16,7 +16,7 @@
 
 * The greatest decrease in losses (date and amount) over the entire period
 
-* As an example, your analysis should look similar to the one below:
+* As an example, the analysis should look similar to the one below:
 
   ```text
   Financial Analysis
@@ -32,9 +32,9 @@
 
 ## PyPoll
 
-* In this challenge, you are tasked with helping a small, rural town modernize its vote counting process.
+* In this challenge, there is task helping a small, rural town modernize its vote counting process.
 
-* You will be give a set of poll data called [election_data.csv](PyPoll/Resources/election_data.csv). The dataset is composed of three columns: `Voter ID`, `County`, and `Candidate`. Your task is to create a Python script that analyzes the votes and calculates each of the following:
+* There will be given a set of poll data called [election_data.csv](PyPoll/Resources/election_data.csv). The dataset is composed of three columns: `Voter ID`, `County`, and `Candidate`. Task is to create a Python script that analyzes the votes and calculates each of the following:
 
 * The total number of votes cast
 
@@ -62,7 +62,7 @@
   -------------------------
   ```
 
-* In addition, your final script should both print the analysis to the terminal and export a text file with the results.
+* In addition, the final script should both print the analysis to the terminal and export a text file with the results.
 
 ## Hints and Considerations
 
